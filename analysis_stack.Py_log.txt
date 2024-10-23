@@ -1,0 +1,26 @@
+root - INFO - started general portfolio analysis script
+root - INFO - {'date': '221211', 'ticker_table': 'stream_shots$stream_msgs_31$message_id', 'message_table': 'stream_msgs_31', 'tickerPerf_table': 'stock_info.stockperf$stream', 'hourly_delays': '(24,7*24,4*168)', 'database': 'twitter_analysis_v3', 'user': 'deven', 'benchmarkPerf_table': 'stock_info.stockperf_benchmark$stream', 'benchmark_ticker': 'SPY', 'stockperf_table': 'stock_info.stockperf$stream'}
+root - INFO - date_pipeline <- 221211
+root - INFO - table_tickerFeat <- stream_shots$stream_msgs_31$message_id
+root - INFO - table_messageTable <- stream_msgs_31
+root - INFO - table_tickerPerf_name <- stock_info.stockperf$stream
+root - INFO - list_of_hourly_delays <- (24, 168, 672)
+root - INFO - db_name <- twitter_analysis_v3
+root - INFO - db_username <- deven
+root - INFO - table_tickerBenchmark_name <- stock_info.stockperf_benchmark$stream
+root - INFO - ticker_benchmark <- SPY
+root - INFO - stockperf_table <- stock_info.stockperf$stream
+root - INFO - < script started: stream_msgs_31,  - , 221211
+root - INFO - STEP 1 : Shot table
+root - INFO -   ticker                   message_id          caller       shot_dateTime                           shot_id
+0    QQQ   1601993349434589191-41-qqq       AdnansArk 2022-12-11 17:32:32    QQQ_1601993349434589191-41-qqq
+1   CLDX   1601993650602246144-1-cldx        Tickeron 2022-12-11 17:33:44   CLDX_1601993650602246144-1-cldx
+2   SPWR  1601993719879991296-45-spwr  SteveUrkelDude 2022-12-11 17:34:01  SPWR_1601993719879991296-45-spwr
+3   ARRY  1601993719879991296-47-arry  SteveUrkelDude 2022-12-11 17:34:01  ARRY_1601993719879991296-47-arry
+4   FSLR  1601993719879991296-49-fslr  SteveUrkelDude 2022-12-11 17:34:01  FSLR_1601993719879991296-49-fslr
+root - INFO - Pulled in (72, 5) shots.
+root - INFO - STEP 2: checking performances for time delays 
+root - INFO - 0 STOCKS FOUND :: starting with 72 ticker feat, we could find outcome data for 0 of them.
+root - INFO - starting with 72,  ticker feat, outcome data found for  0
+root - INFO - Inserting stockprice into table shotPrices$221211_cron
+root - INFO - Total rows : 72, Total Non-NA rows : 0
